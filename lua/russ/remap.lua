@@ -3,7 +3,7 @@ vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 
 -- jk to enter normal mode
-vim.api.nvim_set_keymap('i', 'jk', '<Esc>', {noremap = true})
+vim.api.nvim_set_keymap('i', 'ht', '<Esc>', {noremap = true})
 
 -- capital W saves too
 vim.keymap.set("n", "W", "w")
