@@ -24,60 +24,23 @@ require("lazy").setup({
 		-- Bottom status bar
 		{ 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 
+		-- Telescope: fuzzy finder
+		{
+		    'nvim-telescope/telescope.nvim', tag = '0.1.5',
+		     dependencies = { 'nvim-lua/plenary.nvim' }
+	        },
+
+		-- LSP stuff from lsp-zero
+		{'williamboman/mason.nvim'},
+		{'williamboman/mason-lspconfig.nvim'},
+		{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
+		{'neovim/nvim-lspconfig'},
+		{'hrsh7th/cmp-nvim-lsp'},
+		{'hrsh7th/nvim-cmp'},
+		{'L3MON4D3/LuaSnip'},
+
 	},
 })
 
-require'nvim-treesitter.configs'.setup {
-  highlight = {
-    enable = true,
-    -- Setting this to true will run `:h syntax` and tree-sitter at the same time.
-    -- Set this to `true` if you depend on 'syntax' being enabled (like for indentation).
-    -- Using this option may slow down your editor, and you may see some duplicate highlights.
-    -- Instead of true it can also be a list of languages
-    additional_vim_regex_highlighting = false,
-  },
-}
-require('monokai').setup {}
-require("mason").setup()
+require('config.after')
 
-require('lualine').setup {
-  options = {
-    theme = molokai,
-    icons_enabled = true,
-    theme = 'auto',
-    component_separators = { left = '', right = ''},
-    section_separators = { left = '', right = ''},
-    disabled_filetypes = {
-      statusline = {},
-      winbar = {},
-    },
-    ignore_focus = {},
-    always_divide_middle = true,
-    globalstatus = false,
-    refresh = {
-      statusline = 1000,
-      tabline = 1000,
-      winbar = 1000,
-    }
-  },
-  sections = {
-    lualine_a = {'mode'}, -- NORMAL, INSERT, etc.
-    lualine_b = {'branch', 'diff', 'diagnostics'}, -- git branch
-    lualine_c = {'filename'}, -- filename
-    lualine_x = {},-- blank
-    lualine_y = {'encoding', 'fileformat', 'filetype'},
-    lualine_z = {'location'}
-  },
-  inactive_sections = {
-    lualine_a = {},
-    lualine_b = {},
-    lualine_c = {'filename'},
-    lualine_x = {},
-    lualine_y = {'location'},
-    lualine_z = {}
-  },
-  tabline = {},
-  winbar = {},
-  inactive_winbar = {},
-  extensions = {}
-}
