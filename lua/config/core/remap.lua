@@ -5,6 +5,10 @@ local keymap = vim.keymap
 -- jk to enter normal mode
 keymap.set("i", "jk", "<Esc>", { noremap = true })
 
+-- k + j to create a new line below, regardless of where on 
+-- the current line you are when in insert mode
+keymap.set("i", "kj", "<Esc>o", { noremap = true, silent = true })
+
 -- capital W saves too
 keymap.set("n", "W", "w")
 
@@ -19,8 +23,8 @@ keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
 keymap.set("n", "N", "Nzzzv")
 
--- replace word under cursor with <Leader>s
-keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+-- replace word under cursor with <Leader>r
+keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 
 -- copy to system clipboard with <Leader>y
 keymap.set({ "n", "v" }, "<leader>y", [["+y]])
@@ -33,10 +37,10 @@ keymap.set("n", "<leader>nh", ":nohl<CR>")
 keymap.set("n", "<leader>sv", "<C-w>v") -- leader sv split vertically
 keymap.set("n", "<leader>sh", "<C-w>s") -- leader sh split horizontally
 keymap.set("n", "<leader>sx", ":close<CR>") -- leader sx close current split window
-keymap.set("n", "<leader>wl", "<C-w>l") -- leader wl = move to right split window
-keymap.set("n", "<leader>wh", "<C-w>h") -- leader wl = move to left split window
-keymap.set("n", "<leader>wj", "<C-w>j") -- leader wl = move to bottom split window
-keymap.set("n", "<leader>wk", "<C-w>k") -- leader wl = move to top split window
+keymap.set("n", "<leader>l", "<C-w>l") -- leader l = move to right split window
+keymap.set("n", "<leader>h", "<C-w>h") -- leader h = move to left split window
+keymap.set("n", "<leader>j", "<C-w>j") -- leader j = move to bottom split window
+keymap.set("n", "<leader>k", "<C-w>k") -- leader k = move to top split window
 
 -- tab management
 keymap.set("n", "<leader>to", ":tabnew<CR>") -- open a new tab
