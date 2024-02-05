@@ -38,6 +38,7 @@ require("lazy").setup({
 		{'L3MON4D3/LuaSnip'},
 
         -- TODO: experiment with this, I might want to use https://github.com/tpope/vim-surround instead
+        -- if this is buggy
         {
             "kylechui/nvim-surround",
             version = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -59,6 +60,9 @@ require("lazy").setup({
         -- TODO: add github copilot
         -- TODO: Decide if I want autocompletion with nvim-cmp, cmp-buffer, cmp-path
         -- TODO: Decide if I want snippets from LuaSNip, cmp_luasnip, friendly-snippets
+        -- TODO: See LSP stuff because there's some overlap there
+
+        --TODO: Find your favourite git plugin and add that
 
 	},
 })
