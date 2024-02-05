@@ -55,7 +55,8 @@ require("lazy").setup({
         -- gcap to toggle comments around a paragraph
         { "numToStr/Comment.nvim" },
 
-        
+        -- Git integrations
+        { "lewis6991/gitsigns.nvim" },
 
         -- TODO: add github copilot
         -- TODO: Decide if I want autocompletion with nvim-cmp, cmp-buffer, cmp-path
