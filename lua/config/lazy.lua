@@ -1,6 +1,3 @@
--- require keymaps
-require('config.remap')
-
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   -- bootstrap lazy.nvim
@@ -28,9 +25,10 @@ require("lazy").setup({
 		{
 		    'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		     dependencies = { 'nvim-lua/plenary.nvim' }
-	        },
+        },
 
 		-- LSP stuff from lsp-zero
+        -- TODO: figure out what's wrong here, something isn't set up right
 		{'williamboman/mason.nvim'},
 		{'williamboman/mason-lspconfig.nvim'},
 		{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
@@ -39,8 +37,29 @@ require("lazy").setup({
 		{'hrsh7th/nvim-cmp'},
 		{'L3MON4D3/LuaSnip'},
 
+        -- TODO: experiment with this, I might want to use https://github.com/tpope/vim-surround instead
+        {
+            "kylechui/nvim-surround",
+            version = "*", -- Use for stability; omit to use `main` branch for the latest features
+            event = "VeryLazy",
+            config = function()
+                require("nvim-surround").setup({
+                    -- Configuration here, or leave empty to use defaults
+                })
+            end
+        },
+
+        -- can now use gc<motion> to toggle comments
+        -- i.e. gcc to toggle line comments, or
+        -- gcap to toggle comments around a paragraph
+        { "numToStr/Comment.nvim" },
+
+        
+
+        -- TODO: add github copilot
+        -- TODO: Decide if I want autocompletion with nvim-cmp, cmp-buffer, cmp-path
+        -- TODO: Decide if I want snippets from LuaSNip, cmp_luasnip, friendly-snippets
+
 	},
 })
-
-require('config.after')
 
