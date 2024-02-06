@@ -48,3 +48,7 @@ keymap.set("n", "<leader>tx", ":tabclose<CR>") -- close the current tab
 keymap.set("n", "<leader>tl", ":tabn<CR>") -- go to next tab
 keymap.set("n", "<leader>th", ":tabp<CR>") -- go to previous tab
 
+-- Git management
+keymap.set("n", "<leader>gdo", ":DiffviewOpen<CR>") -- leader gdo (git diff open) to open git diff
+keymap.set("n", "<leader>gdc", ":DiffviewClose<CR>") -- leader gdc (git diff close) to close git diff
+

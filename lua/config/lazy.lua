@@ -24,8 +24,7 @@ require("lazy").setup({
 		     dependencies = { 'nvim-lua/plenary.nvim' }
         },
 
-        -- TODO: experiment with this, I might want to use https://github.com/tpope/vim-surround instead
-        -- if this is buggy
+        -- nvim-surround: surround text with whatever characters you give it.
         {
             "kylechui/nvim-surround",
             version = "*", -- Use for stability; omit to use `main` branch for the latest features
@@ -45,7 +44,7 @@ require("lazy").setup({
         -- Git integrations
         { "lewis6991/gitsigns.nvim" },
         { "f-person/git-blame.nvim" },
-        -- TODO: Git conflicts and git diff viewer
+        { "sindrets/diffview.nvim" },
 
         -- TODO: All my LSP Stuff
 
