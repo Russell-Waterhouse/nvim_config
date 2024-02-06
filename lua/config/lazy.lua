@@ -57,6 +57,7 @@ require("lazy").setup({
 
         -- Git integrations
         { "lewis6991/gitsigns.nvim" },
+        { "f-person/git-blame.nvim" },
 
         -- TODO: add github copilot
         -- TODO: Decide if I want autocompletion with nvim-cmp, cmp-buffer, cmp-path

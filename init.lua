@@ -10,6 +10,7 @@ require('config.after.theme')
 require('config.after.lsp')
 require('config.after.comment')
 require('config.after.gitsigns')
+require('config.after.gitblame')
 -- Lualine has to be last or else colours don't appear for some reason
 require('config.after.lualine')
 
