@@ -15,9 +15,6 @@ require("lazy").setup({
 		-- Monokai theme
 		{ "tanvirtin/monokai.nvim" },
 
-		-- LSP support
-		{ "williamboman/mason.nvim" },
-
 		-- Bottom status bar
 		{ 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons' } },
 
@@ -26,16 +23,6 @@ require("lazy").setup({
 		    'nvim-telescope/telescope.nvim', tag = '0.1.5',
 		     dependencies = { 'nvim-lua/plenary.nvim' }
         },
-
-		-- LSP stuff from lsp-zero
-        -- TODO: figure out what's wrong here, something isn't set up right
-		{'williamboman/mason.nvim'},
-		{'williamboman/mason-lspconfig.nvim'},
-		{'VonHeikemen/lsp-zero.nvim', branch = 'v3.x'},
-		{'neovim/nvim-lspconfig'},
-		{'hrsh7th/cmp-nvim-lsp'},
-		{'hrsh7th/nvim-cmp'},
-		{'L3MON4D3/LuaSnip'},
 
         -- TODO: experiment with this, I might want to use https://github.com/tpope/vim-surround instead
         -- if this is buggy
@@ -58,13 +45,13 @@ require("lazy").setup({
         -- Git integrations
         { "lewis6991/gitsigns.nvim" },
         { "f-person/git-blame.nvim" },
+        -- TODO: Git conflicts and git diff viewer
 
-        -- TODO: add github copilot
+        -- TODO: All my LSP Stuff
+
+        -- TODO: Decide if I want to add github copilot?
         -- TODO: Decide if I want autocompletion with nvim-cmp, cmp-buffer, cmp-path
         -- TODO: Decide if I want snippets from LuaSNip, cmp_luasnip, friendly-snippets
-        -- TODO: See LSP stuff because there's some overlap there
-
-        --TODO: Find your favourite git plugin and add that
 
 	},
 })
