@@ -46,11 +46,24 @@ require("lazy").setup({
         { "f-person/git-blame.nvim" },
         { "sindrets/diffview.nvim" },
 
-        -- TODO: All my LSP Stuff
-
-        -- TODO: Decide if I want to add github copilot?
         -- TODO: Decide if I want autocompletion with nvim-cmp, cmp-buffer, cmp-path
         -- TODO: Decide if I want snippets from LuaSNip, cmp_luasnip, friendly-snippets
+
+        -- overhauls messages, mcdline, and popup menu
+        {
+            "folke/noice.nvim",
+            event = "VeryLazy",
+            opts = {
+            },
+            dependencies = {
+                -- if you lazy-load any plugin below, make sure to add proper `module="..."` entries
+                "MunifTanjim/nui.nvim",
+                -- OPTIONAL:
+                --   `nvim-notify` is only needed, if you want to use the notification view.
+                --   If not available, we use `mini` as the fallback
+                "rcarriga/nvim-notify",
+            }
+        }
 
 	},
 })
