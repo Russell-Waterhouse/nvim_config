@@ -35,3 +35,6 @@ opt.splitbelow = true
 -- dash "-" is now a part of the word recognized by w key
 opt.iskeyword:append("-")
 
+-- see whitespace at the end of lines
+opt.list = true
+

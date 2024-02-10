@@ -70,6 +70,17 @@ require("lazy").setup({
             opts = {},
         },
 
+        {
+            'hrsh7th/nvim-cmp',
+            dependencies = {
+                'hrsh7th/cmp-buffer', -- use current buffer as completions source 
+                'hrsh7th/cmp-path', -- use filesystem as completions source
+                'L3MON4D3/LuaSnip', -- snippet engine
+                'saadparwaiz1/cmp_luasnip', -- completion source for luasnip
+                "rafamadriz/friendly-snippets" -- useful snippets
+            }
+        },
+
 	},
 })
 

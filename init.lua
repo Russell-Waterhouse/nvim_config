@@ -11,6 +11,7 @@ require('config.after.comment')
 require('config.after.gitsigns')
 require('config.after.gitblame')
 require('config.after.noice')
+require('config.after.nvim_cmp')
 -- Lualine has to be last or else colours don't appear for some reason
 require('config.after.lualine')
 

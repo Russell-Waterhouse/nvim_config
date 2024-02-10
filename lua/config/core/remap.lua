@@ -8,6 +8,9 @@ keymap.set("i", "jk", "<Esc>", { noremap = true })
 -- k + j to create a new line below, regardless of where on 
 -- the current line you are when in insert mode
 keymap.set("i", "kj", "<Esc>o", { noremap = true, silent = true })
+-- K + J to create a new line above, regardless of where on 
+-- the current line you are when in insert mode
+keymap.set("i", "KJ", "<Esc>O", { noremap = true, silent = true })
 
 -- capital W saves too
 keymap.set("n", "W", "w")
