@@ -82,12 +82,3 @@ lsp['clangd'].setup{
     on_attach = on_attach
 }
 
-lsp['ruby_ls'].setup{
-    capabilities = capabilities,
-    on_attach = on_attach
-}
-
-
--- TODO: Configure other language servers on work laptop so that they don't clash
--- and I can use this at work as well as at home.
-
