@@ -55,3 +55,5 @@ keymap.set("n", "<leader>th", ":tabp<CR>") -- go to previous tab
 keymap.set("n", "<leader>gdo", ":DiffviewOpen<CR>") -- leader gdo (git diff open) to open git diff
 keymap.set("n", "<leader>gdx", ":DiffviewClose<CR>") -- leader gdx (git diff close) to close git diff
 
+-- File Explorer
+keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>") -- leader gdo (git diff open) to open git diff
