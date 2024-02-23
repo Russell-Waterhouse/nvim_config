@@ -38,3 +38,7 @@ opt.iskeyword:append("-")
 -- see whitespace at the end of lines
 opt.list = true
 
+-- max scrolloff of 10 to keep my cursor more centered
+opt.scrolloff = 10
+opt.colorcolumn = "80"
+
