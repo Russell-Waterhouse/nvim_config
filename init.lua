@@ -14,6 +14,7 @@ require('config.after.noice')
 require('config.after.nvim_cmp')
 require('config.after.mason')
 require('config.after.lspconfig')
+require('config.after.oil')
 -- Lualine has to be last or else colours don't appear for some reason
 require('config.after.lualine')
 
