@@ -37,8 +37,8 @@ keymap.set("n", "<leader>Y", [["+Y]])
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
 -- window management
-keymap.set("n", "<leader>sv", "<C-w>v") -- leader sv split vertically
-keymap.set("n", "<leader>sh", "<C-w>s") -- leader sh split horizontally
+keymap.set("n", "<leader>V", "<C-w>v") -- leader V split vertically
+keymap.set("n", "<leader>H", "<C-w>s") -- leader H split horizontally
 keymap.set("n", "<leader>sx", ":close<CR>") -- leader sx close current split window
 keymap.set("n", "<leader>l", "<C-w>l") -- leader l = move to right split window
 keymap.set("n", "<leader>h", "<C-w>h") -- leader h = move to left split window
