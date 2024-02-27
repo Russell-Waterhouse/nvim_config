@@ -15,6 +15,7 @@ require('config.after.nvim_cmp')
 require('config.after.mason')
 require('config.after.lspconfig')
 require('config.after.oil')
+require('config.after.indent-blankline')
 -- Lualine has to be last or else colours don't appear for some reason
 require('config.after.lualine')
 
