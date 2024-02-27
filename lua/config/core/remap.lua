@@ -41,6 +41,9 @@ keymap.set("n", "<leader>Y", [["+Y]])
 -- clear highlighting
 keymap.set("n", "<leader>nh", ":nohl<CR>")
 
+-- turn on spellcheck (cs for check spelling)
+keymap.set("n", "<leader>cs", ":setlocal spell spelllang=en_us<CR>")
+
 -- window management
 keymap.set("n", "<leader>V", "<C-w>v") -- leader V split vertically
 keymap.set("n", "<leader>H", "<C-w>s") -- leader H split horizontally
