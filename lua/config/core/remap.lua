@@ -38,8 +38,8 @@ keymap.set("n", "<leader>r", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left
 keymap.set({ "n", "v" }, "<leader>y", [["+y]])
 keymap.set("n", "<leader>Y", [["+Y]])
 
--- paste on new line
-keymap.set("n", "<leader>p", ":pu<CR>")
+-- paste on new line and format
+keymap.set("n", "<leader>p", ":pu<CR>kVjj=j^")
 
 -- clear highlighting
 keymap.set("n", "<leader>nh", ":nohl<CR>")
