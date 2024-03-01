@@ -2,8 +2,9 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
--- jk to enter normal mode
+-- jk/JK to enter normal mode
 keymap.set("i", "jk", "<Esc>", { noremap = true })
+keymap.set("i", "JK", "<Esc>", { noremap = true })
 
 -- k + j to create a new line below, regardless of where on 
 -- the current line you are when in insert mode
