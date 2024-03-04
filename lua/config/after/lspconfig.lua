@@ -87,3 +87,8 @@ lsp['tsserver'].setup{
     on_attach = on_attach
 }
 
+lsp['pylsp'].setup{
+    capabilities = capabilities,
+    on_attach = on_attach
+}
+
