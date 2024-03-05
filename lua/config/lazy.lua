@@ -111,6 +111,8 @@ require("lazy").setup({
 
         { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
+        { "github/copilot.vim" }
+
     },
 })
 
