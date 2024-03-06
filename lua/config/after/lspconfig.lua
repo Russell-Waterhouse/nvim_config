@@ -92,3 +92,13 @@ lsp['pylsp'].setup{
     on_attach = on_attach
 }
 
+lsp['ltex'].setup{
+    capabilities = capabilities,
+    on_attach = on_attach
+}
+
+lsp['rust_analyzer'].setup{
+    capabilities = capabilities,
+    on_attach = on_attach
+}
+
