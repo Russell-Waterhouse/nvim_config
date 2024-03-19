@@ -94,8 +94,9 @@ require("lazy").setup({
         },
 
         {
+            -- TODO: Make this actually work in haskell or find a better plugin
             'Wansmer/treesj',
-            keys = { '<space>M', '<space>J', '<space>S' },
+            keys = { '<space>m', '<space>J', '<space>S' },
             dependencies = { 'nvim-treesitter/nvim-treesitter' },
             config = function()
                 require('treesj').setup()
