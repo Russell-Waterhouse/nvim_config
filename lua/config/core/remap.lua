@@ -68,4 +68,7 @@ keymap.set("n", "<leader>gdo", ":DiffviewOpen<CR>") -- leader gdo (git diff open
 keymap.set("n", "<leader>gdx", ":DiffviewClose<CR>") -- leader gdx (git diff close) to close git diff
 
 -- File Explorer
-keymap.set("n", "<leader>e", ":Oil --float<CR>") -- leader gdo (git diff open) to open git diff
+keymap.set("n", "<leader>e", ":Oil --float<CR>")
+
+-- format arround paragraph to be 80 chars or less
+keymap.set("n", "<leader>q", "gqap")
