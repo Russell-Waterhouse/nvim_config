@@ -15,8 +15,10 @@ keymap.set("i", "KJ", "<Esc>O", { noremap = true, silent = true })
 
 -- L moves to the right of the current line
 keymap.set("n", "L", "$", { noremap = true, silent = true})
+keymap.set("v", "L", "$", { noremap = true, silent = true})
 -- H Moves to the start of the current line's text
 keymap.set("n", "H", "^", { noremap = true, silent = true})
+keymap.set("v", "H", "^", { noremap = true, silent = true})
 
 -- capital W saves too
 keymap.set("n", "W", "w")
