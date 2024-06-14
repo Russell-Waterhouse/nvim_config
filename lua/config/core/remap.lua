@@ -6,13 +6,6 @@ local keymap = vim.keymap
 keymap.set("i", "jk", "<Esc>", { noremap = true })
 keymap.set("i", "JK", "<Esc>", { noremap = true })
 
--- k + j to create a new line below, regardless of where on 
--- the current line you are when in insert mode
-keymap.set("i", "kj", "<Esc>o", { noremap = true, silent = true })
--- K + J to create a new line above, regardless of where on 
--- the current line you are when in insert mode
-keymap.set("i", "KJ", "<Esc>O", { noremap = true, silent = true })
-
 -- L moves to the right of the current line
 keymap.set("n", "L", "$", { noremap = true, silent = true})
 keymap.set("v", "L", "$", { noremap = true, silent = true})
