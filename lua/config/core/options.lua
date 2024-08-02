@@ -8,13 +8,10 @@ opt.number = true
 opt.wrap = true
 
 -- tabs and indentation
-opt.tabstop = 4
-opt.shiftwidth = 4
+opt.tabstop = 2
+opt.shiftwidth = 2
 opt.expandtab = true
 opt.autoindent = true
-
--- line wrapping
-opt.wrap = false
 
 -- search settings
 opt.ignorecase = true

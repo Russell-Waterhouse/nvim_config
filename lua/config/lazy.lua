@@ -104,6 +104,7 @@ require("lazy").setup({
             dependencies = { 'nvim-treesitter/nvim-treesitter' },
             config = function()
                 require('treesj').setup({
+                    max_join_length = 255,
                     langs = {
                         haskell = {
                             array = {--[[ preset ]]},
